@@ -70,8 +70,10 @@ textarea {
   margin-inline: auto;
 }
 
-.page__body {
-  padding-block: 1.5rem calc(1rem - .6rem);
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 2rem);
 }
 
 .content__body pre,
