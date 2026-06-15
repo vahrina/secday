@@ -1,12 +1,19 @@
-/* Override this file to customise the theme's CSS for your site */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+@import 'timeline.css';
+@import 'faq.css';
+
 :root {
-  --trans: 240ms cubic-bezier(.41,.1,.67,.97);
+  --trans-dur: 240ms;
+  --trans-ease: cubic-bezier(.41, .1, .67, .97);
+  --trans: var(--trans-dur) var(--trans-ease);
   --content-width: 52rem;
   --page-pad: 1rem;
 }
 
 * {
   cursor: crosshair;
+  user-select: none;
+  text-transform: lowercase;
 }
 
 html {
@@ -14,14 +21,73 @@ html {
   scrollbar-gutter: stable;
 }
 
-body {
-  font-family: monospace;
-  user-select: none;
-  text-transform: lowercase;
+@view-transition {
+  navigation: auto;
+}
+
+.page__body {
+  view-transition-name: page-content;
+}
+
+.page__footer {
+  view-transition-name: page-footer;
+}
+
+::view-transition-old(page-content) {
+  animation: fade-out var(--trans) both;
+}
+
+::view-transition-new(page-content) {
+  animation: fade-in var(--trans) both;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+}
+
+@keyframes fade-out {
+  to { opacity: 0; }
+}
+
+body, pre, code {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+h1 {
+  font-size: 1.25rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+h1, h2, h3 {
+  margin-bottom: 1rem;
+}
+
+.content__body h1 {
+  color: #cb9288;
+}
+
+.content__body h2 {
+  color: var(--base0A);
+}
+
+.content__body h3 {
+  color: var(--base07);
+}
+
+strong {
+  color: var(--accent, #a3be8c);
+  margin-bottom: .5rem;
 }
 
 ::-webkit-scrollbar { width: 0.5rem; }
-::-webkit-scrollbar-track { background: var(--base00); }
+::-webkit-scrollbar-track { background: var(--base02); }
 ::-webkit-scrollbar-thumb { background: var(--base03); }
 
 a.page__logo-inner:hover {
@@ -37,11 +103,11 @@ textarea {
   transition: all var(--trans);
 }
 
-.nav-main-item {
+a:link {
   text-decoration: none;
 }
 
-.active {
+a.active {
   text-decoration: underline;
 }
 
@@ -94,4 +160,9 @@ textarea {
       "footer";
     grid-template-columns: minmax(0, 1fr);
   }
+}
+
+/* hide front matter `title: ".."`, preserve for tab title */
+.content__header {
+  display: none;
 }

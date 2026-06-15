@@ -1,7 +1,8 @@
 +++
-title = "ss -tlnp '( dport = :pixelframe )'"
+title = "pixelwars"
 +++
 
+# ss -tlnp '( dport = :pixelframe )'
 {{< pixels >}}
 
 ---
@@ -10,7 +11,7 @@ title = "ss -tlnp '( dport = :pixelframe )'"
 
 Pixelwars ist ein anarchisches Spielprinzip, bei dem Spieler auf einer virtuellen Leinwand einzelne Pixel platzieren können. Inspiriert von r/Place (Reddit) & dem CCC-Original
 
-Am Eventtag läuft **Pixelwars Extreme** gegen 17:00 Uhr (siehe [Overview](/overview/)) - mit Websockets, Web UI & API
+Am Eventtag läuft **Pixelwars Ultimate** gegen --:-- Uhr (siehe [timeline](/timeline/)) - mit Websockets, Web UI & API
 
 ## Mitspielen
 
@@ -27,5 +28,3 @@ Am Eventtag läuft **Pixelwars Extreme** gegen 17:00 Uhr (siehe [Overview](/over
 - SSID: TBA
 - Benutzer: TBA
 - Passwort: TBA
-
-

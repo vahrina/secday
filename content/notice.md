@@ -1,7 +1,8 @@
 +++
-title = "stat /usr/share/common-licenses/CC-BY-4.0"
+title = "notice"
 +++
 
+# stat /usr/share/common-licenses/CC-BY-4.0
 {{< notice >}}
 
 ---
@@ -10,7 +11,7 @@ title = "stat /usr/share/common-licenses/CC-BY-4.0"
 
 Inhalte dieser Website stehen unter **[Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)**
 
-Du darfst Texte und Materialien **frei nutzen, teilen & anpassen** - auch kommerziell
+Du darfst Texte & Materialien **frei nutzen, teilen & anpassen** - auch kommerziell
 
 ## contribute
 

@@ -1,7 +1,8 @@
 +++
-title = "systemctl status sec-day.service"
+title = "overview"
 +++
 
+# systemctl status sec-day.service
 {{< home >}}
 
 ---
@@ -18,6 +19,7 @@ Das Event wird von Studierenden der Hochschule Offenburg organisiert und richtet
 
 | Bereich | Inhalt |
 | --- | --- |
-| [Overview](/overview/) | Vortragsplan & teilnehmende Firmen |
-| [Pixelwars](/pixels/) | pixel wars für alle! |
-| [Notice](/notice/) | lizens, code |
+| [timeline](/timeline/) | vortragsplan & teilnehmende firmen |
+| [pixelwars](/pixelwars/) | r/pixel fans welcome! |
+| [faq](/faq/) | für Besucher & Speaker |
+| [notice](/notice/) | lizens, code |

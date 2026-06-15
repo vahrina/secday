@@ -1,9 +1,10 @@
-baseURL = "https://security-day.hs-offenburg.de"
+baseURL = "https://securisotto-vah.wtf"
 theme = "risotto"
 title = "Security Day 2026"
 enableInlineShortcodes = true
 ignoreErrors = ["error-remote-getjson"]
 sectionPagesMenu = "main"
+buildFuture = true
 
 [params]
 noindex = false
@@ -13,22 +14,24 @@ palette = "gruvbox-dark"
 
 [menu]
   [[menu.main]]
-    identifier = "overview"
-    name = "overview"
-    url = "/overview/"
+    name = "timeline"
+    url = "/timeline/"
     weight = 1
 
   [[menu.main]]
-    identifier = "pixels"
-    name = "pixels"
-    url = "/pixels/"
+    name = "pixelwars"
+    url = "/pixelwars/"
     weight = 2
 
   [[menu.main]]
-    identifier = "notice"
+    name = "faq"
+    url = "/faq/"
+    weight = 3
+
+  [[menu.main]]
     name = "notice"
     url = "/notice/"
-    weight = 3
+    weight = 4
 
 [markup.goldmark.renderer]
 unsafe = true
