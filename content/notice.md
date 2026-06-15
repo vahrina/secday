@@ -15,6 +15,6 @@ Du darfst Texte & Materialien **frei nutzen, teilen & anpassen** - auch kommerzi
 
 ## contribute
 
-- **git repo** [vahrina/secday](https://github.com/vahrina/secday)
+- **git repo** [vahrina/securisotto](https://github.com/vahrina/securisotto)
 - **discord** [discord.gg/td2RfbxF7G](https://discord.gg/td2RfbxF7G)
 - **hso web** [hs-offenburg](https://hs-offenburg.de)
